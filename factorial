@@ -1,0 +1,9 @@
+function f(n) {
+    console.log(3)
+    return;
+}
+
+
+for (let i = 0; i < n; i++) {
+    f(n - 1);
+}

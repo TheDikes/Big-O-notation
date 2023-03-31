@@ -1,0 +1,21 @@
+//O(log n) - Explanation Iterative
+
+function logn(n) {
+  while (n > 1) {
+    n = Math.floor(n / 2);
+  }
+}
+
+/*n = 8
+iteration 1: n = 8/2 = 4
+iteration 2: n = 4/2 = 2
+iteration 3: n = 2/2 = 1
+*/
+
+
+//Explanation Recursive
+function logFunc(n) {
+    if (n === 0) return "Done";
+    n = Math.floor(n / 2);
+    return logFunc(n);
+}
